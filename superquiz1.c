@@ -1,4 +1,5 @@
 #include <stdio.h>
+<<<<<<< HEAD
 
 //-1 19 14 -3 -1 -18 9 -13 12 -18 19 -2 1 14 -8 -18 
 
@@ -42,3 +43,32 @@ int main(void)
 
         }
     }
+=======
+#include <stdbool.h>
+
+int main(void)
+{
+    int currentStarter, currentStopper, currentNum, decryptedValue = 0;
+    bool valueReached, endOfInput = false;
+    
+    scanf("%d%d", &currentStopper, &currentStarter);
+    printf("Stopper: %d, Starter: %d\n", currentStopper, currentStarter);
+
+    while (!endOfInput) {
+        while (!valueReached) {
+            scanf("%d", &currentNum);
+            if (currentNum == currentStopper) {
+                valueReached = true;
+                break;
+            }
+            decryptedValue += currentNum;
+        }
+        printf("%d\n", decryptedValue);
+        
+    
+    
+    }
+}
+
+
+>>>>>>> 1be16ddd0990248a167baf8c4d01476cd4fd354c
